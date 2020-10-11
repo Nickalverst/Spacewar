@@ -23,6 +23,6 @@ Atualmente, os resultados podem ser verificados no console de desenvolvimento we
 * "Player 1 wins!", quando o Jogador Um é vitorioso;
 * "Player 2 wins!", quando o Jogador Dois é vitorioso;
 * "Crash detected!", quando há colisão entre as naves.
-### Obseervações: 
+### Observações: 
 * Para simplificar os cálculos, maximizar performance e aumentar compatibilidade foi utilizado o sistema de colisão circular. As consequências dessa escolha não são perceptíveis o suficiente para justificar o uso de técnicas mais precisas. 
 * O jogo é atualizado a cada 16.65ms (gerando, portanto, 60 quadros por segundo).
