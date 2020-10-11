@@ -22,6 +22,9 @@ const MAX_SPEED = 10; // Velocidade máxima das naves
 canvas = document.getElementById('gameCanvas');
 context = canvas.getContext('2d');
 
+// Determina se o jogo acabou
+var ended = false;
+
 canvasBounds = canvas.getBoundingClientRect();
 
 const newShip = {
@@ -261,25 +264,26 @@ function update()
 
 	if (collisionDetection(laser2.x, laser2.y, laser2.r, ship.x, ship.y, ship.r))
 	{
+		if (!ended) { console.log("Player 2 wins!"); }
 		restartGame();
-		console.log("Player 2 wins!")
 	}
 
 	if (collisionDetection(laser.x, laser.y, laser.r, ship2.x, ship2.y, ship2.r))
 	{
+		if (!ended) { console.log("Player 1 wins!"); }
 		restartGame();
-		console.log("Player 1 wins!")
 	}
 
 	if (collisionDetection(ship.x, ship.y, ship.r, ship2.x, ship2.y, ship2.r))
 	{
+		if (!ended) { console.log("Crash detected!!"); }
 		restartGame();
-		console.log("Crash detected!!");
 	}
 }
 
 function restartGame() {
-	location.reload();
+	ended = true;
+	setTimeout(() => { location.reload() }, 2000);
 	//ship = newShip;
 	//ship2 = newShip2;
 }
