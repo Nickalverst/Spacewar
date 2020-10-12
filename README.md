@@ -1,5 +1,11 @@
 # *Spacewar!*
 Recriação do jogo multijogador de combate espacial Spacewar!, desenvolvido por Steve Russel em colaboração com Martin Graetz, Wayne Wiitanen, Bob Saunders, Steve Piner, e outros e lançado em abril de 1962 para o minicomputador DEC (Digital Equipment Corporation) PDP-1.
+
+<p align="center"> <img src="/demo-img.jpg" width="500"> <br> <i>Captura de tela.</i> </p>
+
+<p align="center"> <img src="https://media.giphy.com/media/fKS6Ah83UclaulTi5M/giphy.gif"> <br> <i>Demonstração em vídeo no formato GIF (23s).</i> </p>
+
+Para visualizar a demonstração acima em alta resolução (até 1080p), [clique aqui](https://youtu.be/DM4b6CTjyHY "Demonstração do jogo.") (you<span>tu</span>.be/DM4b6CTjyHY).
 ## Gameplay original
 A gameplay do *Spacewar!* original envolve duas naves monocromáticas chamadas "the needle" e "the wedge", cada uma controlada por um jogador. Os jogadores tentam acertar-se enquanto manobram sua nave em um plano bidimensional no campo gravitacional de uma estrela. As naves disparam mísseis, que não são afetados pela atração gravitacional da estrela. As naves têm uma quantidade limitada de mísseis e combustível, usado quando o jogador utiliza os propulsores da nave. Os mísseis são disparados um por vez ao apertar de um botão e existe um tempo de espera entre disparos. As naves mantêm-se em movimento mesmo quando o jogador não está acelerando e rotacionar as naves não altera a direção de seu movimento, embora os navios possam girar em uma taxa constante - sem efeito de inércia.<br><br>
 Os controles do jogador incluem rotação no sentido horário e anti-horário, impulso para frente, disparo de mísseis e hiperespaço.<br><br>
@@ -11,8 +17,10 @@ Alguns aspectos da gameplay do jogo original foram extintos ou levemente alterad
 * o "botão de pânico".<br>
 
 Além disso, o número de disparos não é finito.
+### Como jogar
+Para iniciar o jogo basta executar o arquivo index.html em um navegador de internet a partir de uma cópia do repositório em um diretório local.
 ### Controles
-| Controles                          |  P1 |       P2      |
+| Comandos                           |  P1 |       P2      |
 |------------------------------------|:---:|:-------------:|
 | Acelerar                           | "W" |   "up arrow"  |
 | Rotacionar no sentido horário      | "D" | "right arrow" |
